@@ -9,7 +9,18 @@
     .hero {
         width: 100%;
         min-height: 100vh;
-        background: #dae4ff;
+        background: rgba(77, 245, 255, 1.0);
+        /* background: -webkit-linear-gradient(top right, rgba(77, 245, 255, 1.0), rgba(120, 255, 1, 1.0));
+        background: -moz-linear-gradient(top right, rgba(77, 245, 255, 1.0), rgba(120, 255, 1, 1.0));
+        background: linear-gradient(to bottom left, rgba(77, 245, 255, 1.0), rgba(120, 255, 1, 1.0)); */
+        /* background: rgba(77, 245, 255, 1.0);
+        background: -webkit-linear-gradient(top right, rgba(77, 245, 255, 1.0), rgba(38, 127, 1, 1.0));
+        background: -moz-linear-gradient(top right, rgba(77, 245, 255, 1.0), rgba(38, 127, 1, 1.0));
+        background: linear-gradient(to bottom left, rgba(77, 245, 255, 1.0), rgba(38, 127, 1, 1.0)); */
+        background: rgba(102, 246, 255, 1.0);
+        background: -webkit-linear-gradient(top right, rgba(102, 246, 255, 1.0), rgba(38, 127, 1, 1.0));
+        background: -moz-linear-gradient(top right, rgba(102, 246, 255, 1.0), rgba(38, 127, 1, 1.0));
+        background: linear-gradient(to bottom left, rgba(102, 246, 255, 1.0), rgba(38, 127, 1, 1.0));
         padding-left: 6%;
         padding-right: 6%;
     }
@@ -53,9 +64,23 @@
     .row {
         display: flex;
         width: 100%;
-        background-color: #fff;
+        /* background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%); */
+        /* background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(10px); */
         border-radius: 15px;
         overflow: hidden;
+    }
+    
+    .row {
+        background: rgba(255, 255, 255, 0.5);
+    }
+    
+    @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+        .row {
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+        }
     }
     
     .col-1,
